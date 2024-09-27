@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números de 1 a 100</title>
+    <script>
+        function mostrarNumeros() {
+            var numeros = "";
+            for (var i = 1; i <= 100; i++) {
+                numeros += i + " "; // Adiciona o número e um espaço
+            }
+            document.getElementById("resultado").innerText = numeros;
+        }
+    </script>
+</head>
+<body>
+    <h1>Mostrar Números de 1 a 100</h1>
+    <button onclick="mostrarNumeros()">Mostrar Números</button>
+    <p id="resultado"></p> <!-- Onde os números serão exibidos -->
+</body>
+</html>

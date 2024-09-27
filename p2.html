@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Real para Dólar</title>
+    <script>
+        function converterRealParaDolar() {
+            var valorEmReais = parseFloat(document.getElementById("valorReais").value);
+            var valorEmDolares = valorEmReais / 5; // 1 dólar = 5 reais
+            alert("O valor em dólares é: $" + valorEmDolares.toFixed(2));
+        }
+    </script>
+</head>
+<body>
+    <h1>Conversor de Real para Dólar</h1>
+    <label for="valorReais">Digite o valor em reais:</label>
+    <input type="number" id="valorReais" placeholder="Valor em reais">
+    <button onclick="converterRealParaDolar()">Converter</button>
+</body>
+</html>

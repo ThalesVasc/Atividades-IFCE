@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Ímpares de 100 a 200</title>
+    <script>
+        function mostrarImpares() {
+            var impares = "";
+            for (var i = 101; i < 200; i += 2) { // Começa de 101 (ímpar) e vai de 2 em 2
+                impares += i + " ";
+            }
+            document.getElementById("resultado").innerText = impares;
+        }
+    </script>
+</head>
+<body>
+    <h1>Mostrar Números Ímpares entre 100 e 200</h1>
+    <button onclick="mostrarImpares()">Mostrar Números Ímpares</button>
+    <p id="resultado"></p> <!-- Onde os números ímpares serão exibidos -->
+</body>
+</html>
